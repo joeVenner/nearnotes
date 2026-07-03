@@ -1,0 +1,13 @@
+.DS_Store
+DerivedData/
+build/
+*.xcarchive
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.mobileprovision
+*.p12
+xcuserdata/
+*.xcuserstate
+Config/Secrets.xcconfig
+

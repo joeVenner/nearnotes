@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>GOOGLE_PLACES_API_KEY</key>
+	<string>$(GOOGLE_PLACES_API_KEY)</string>
+	<key>NEARNOTE_TELEMETRY_ENDPOINT</key>
+	<string>$(NEARNOTE_TELEMETRY_ENDPOINT)</string>
+	<key>NEARNOTE_FEEDBACK_ENDPOINT</key>
+	<string>$(NEARNOTE_FEEDBACK_ENDPOINT)</string>
+	<key>NEARNOTE_PRIVACY_URL</key>
+	<string>$(NEARNOTE_PRIVACY_URL)</string>
+	<key>NEARNOTE_SUPPORT_URL</key>
+	<string>$(NEARNOTE_SUPPORT_URL)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>NearNote uses your location to show nearby reminders, search for places, and set up reminders on the map.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>NearNote requires background location access to trigger your alerts when you arrive or leave a selected place, even when the app is closed or in the background. NearNote never tracks your continuous location.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>NearNote requires background location access to trigger your alerts when you arrive or leave a selected place, even when the app is closed or in the background.</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>DropPinAction</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Drop Pin Here</string>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeLocation</string>
+		</dict>
+	</array>
+</dict>
+</plist>

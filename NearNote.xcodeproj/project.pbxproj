@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060B3036CC775B6312B7C555 /* NearNoteWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7F687D259D2017547CA6EE1B /* NearNoteWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0EA961EE1CE470322A628936 /* TelemetryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970C607D8D42D50E57C809C1 /* TelemetryService.swift */; };
+		164DEB19C85384133BF1568F /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACDCCF0E574ABE7997EC6B5 /* Reminder.swift */; };
+		1C79727C46A45B6D1963FA3D /* NearNoteStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED93AF1B9FCFB26EE9E72AD /* NearNoteStyle.swift */; };
+		270EAEEEBD3020D1D3286AB3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACDCCF0E574ABE7997EC6B5 /* Reminder.swift */; };
+		28DB1759B0C0A1FE02DB1FB4 /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4674C181041E0F992C5C71 /* LocationPickerView.swift */; };
+		2A193DC71FC66F7F688DCFF1 /* SavedPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391CB940CBCF8F1E03D9A187 /* SavedPlace.swift */; };
+		2ADA6BF75E4DF2F509C5D0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150BFAE3C29E53953BD25882 /* Assets.xcassets */; };
+		49824A0B42F96FD54F8442CA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB9A01AA819AD4CF2404C48 /* HomeView.swift */; };
+		4F173DB28ED5F02738EDBCF5 /* PlaceSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302EF535C40A42A33758F50 /* PlaceSearchService.swift */; };
+		63EF11D82180D679583F082D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CADAD061AF958679345FC46 /* MapView.swift */; };
+		6B776C3307D489B84136EEE3 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9E4A7966FA2205942B281 /* Place.swift */; };
+		7000D3E5638116B45A193646 /* PermissionEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F04A20F59B12E1162C6EF /* PermissionEducationView.swift */; };
+		70B3984CDC6AAA695DA5DE6A /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2AA5BED0AB58A6B9C1514D /* LocationService.swift */; };
+		722CD991CDF95ECD2E6E3D3B /* ToggleReminderIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8304DE0C6E8B5924FC245510 /* ToggleReminderIntent.swift */; };
+		7D62578E530B4060E8B39166 /* LinkParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3185386EA5B2595C0D7A3C /* LinkParserService.swift */; };
+		8D3F40B281D8C2A8A76F5A4F /* NearNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DAC95797240D991417C84C /* NearNoteTests.swift */; };
+		A5A76399B7FD0EDAE2F70C7C /* ReminderEditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D5BF86DCFF3E7C6A1D775 /* ReminderEditSheet.swift */; };
+		A9870C1D2E715FE21B11ADF0 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51634AC611D42CF6AAD57A /* ReminderStore.swift */; };
+		B0D83CA5DB6593E9A628C766 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010310B8C0CDEAAE00FB3C7 /* SettingsView.swift */; };
+		B2FD124CF94CC51AEFE1145D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D464C3747BD1CAB4D8218B48 /* PrivacyInfo.xcprivacy */; };
+		BB0AD140D96CA529D43015AB /* GeofenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A1F038DB112031042725 /* GeofenceManager.swift */; };
+		BBB3BBE69AD1CEF1DFF6B324 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51634AC611D42CF6AAD57A /* ReminderStore.swift */; };
+		BCBA9D90D6BEE097E5BBE0C8 /* NearNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D830F7FD8DFEC2C4C4F9A82 /* NearNoteApp.swift */; };
+		BFE1FE6A43D2AC7AA56285E4 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D9B487551498A6F6B76D4C /* NotificationService.swift */; };
+		C684BB872AADC4164FD902FB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9FDBEF2E8372EA3628CC9D /* MainView.swift */; };
+		CD563C0824173AF1DC57C52E /* NearNoteWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB9C7CD414E5655EEDC9A4 /* NearNoteWidgetBundle.swift */; };
+		D197803F76038E71C431A896 /* LinkResolverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBBA7B7611B457F320CAC42 /* LinkResolverService.swift */; };
+		D25748996E43A8E9393593D8 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC5E5B055403FF8C0ED7896 /* OnboardingView.swift */; };
+		EB4BB5ECE64BF434D3A91FD4 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C894040D64139DC2EFB9D3ED /* SettingsStore.swift */; };
+		F1914648E7D5149346620EF1 /* ReminderActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2388E238607FE2B3E4B991 /* ReminderActivityAttributes.swift */; };
+		F28D684770B0BC5447E7D599 /* NearNoteHomeScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFD4247D11813C586F6D24 /* NearNoteHomeScreenWidget.swift */; };
+		F509EB2DBE720DEDD69FAD65 /* SavedPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391CB940CBCF8F1E03D9A187 /* SavedPlace.swift */; };
+		FA36309D2EAA99F096E30430 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9E4A7966FA2205942B281 /* Place.swift */; };
+		FFCCF1BD36AC6BA8B9E90999 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43CA4DE783608FD2CCCAEE /* AppConfiguration.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34A9E8CE3F6E6D9893CC6B04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC3FFAE07CB9C320A4E20F24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75FF57A83B4EC107F53D9D5C;
+			remoteInfo = NearNoteWidget;
+		};
+		687AE68BAB8689948FF4D5EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC3FFAE07CB9C320A4E20F24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D5752137A22018D6E67CA13;
+			remoteInfo = NearNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB7F0A894CCB8BB8F161EE88 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				060B3036CC775B6312B7C555 /* NearNoteWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		150BFAE3C29E53953BD25882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A9E4A7966FA2205942B281 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		216960FA931F2C150CB72F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3284E6D4CEF760EDD10FB40F /* NearNoteWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NearNoteWidget.entitlements; sourceTree = "<group>"; };
+		391CB940CBCF8F1E03D9A187 /* SavedPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlace.swift; sourceTree = "<group>"; };
+		3EB9A01AA819AD4CF2404C48 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4ACDCCF0E574ABE7997EC6B5 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		4E43CA4DE783608FD2CCCAEE /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		4F51634AC611D42CF6AAD57A /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
+		4FEFD4247D11813C586F6D24 /* NearNoteHomeScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearNoteHomeScreenWidget.swift; sourceTree = "<group>"; };
+		56DAC95797240D991417C84C /* NearNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearNoteTests.swift; sourceTree = "<group>"; };
+		5883A1F038DB112031042725 /* GeofenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceManager.swift; sourceTree = "<group>"; };
+		6FC5E5B055403FF8C0ED7896 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		7C2388E238607FE2B3E4B991 /* ReminderActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderActivityAttributes.swift; sourceTree = "<group>"; };
+		7E9FDBEF2E8372EA3628CC9D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7F687D259D2017547CA6EE1B /* NearNoteWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = NearNoteWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8302EF535C40A42A33758F50 /* PlaceSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchService.swift; sourceTree = "<group>"; };
+		8304DE0C6E8B5924FC245510 /* ToggleReminderIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleReminderIntent.swift; sourceTree = "<group>"; };
+		8B9F04A20F59B12E1162C6EF /* PermissionEducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionEducationView.swift; sourceTree = "<group>"; };
+		8CADAD061AF958679345FC46 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8D830F7FD8DFEC2C4C4F9A82 /* NearNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearNoteApp.swift; sourceTree = "<group>"; };
+		970C607D8D42D50E57C809C1 /* TelemetryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryService.swift; sourceTree = "<group>"; };
+		9CCB9C7CD414E5655EEDC9A4 /* NearNoteWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearNoteWidgetBundle.swift; sourceTree = "<group>"; };
+		9F4674C181041E0F992C5C71 /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
+		A2695F43811340D1014A608E /* NearNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NearNote.entitlements; sourceTree = "<group>"; };
+		A49D5BF86DCFF3E7C6A1D775 /* ReminderEditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderEditSheet.swift; sourceTree = "<group>"; };
+		AEFF5A076B391296BD488798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C0D9B487551498A6F6B76D4C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		C21B215511DF3542D0910E86 /* NearNote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NearNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C894040D64139DC2EFB9D3ED /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		CA60022614FDE23839B3F312 /* NearNoteTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NearNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D464C3747BD1CAB4D8218B48 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DD3185386EA5B2595C0D7A3C /* LinkParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkParserService.swift; sourceTree = "<group>"; };
+		EED93AF1B9FCFB26EE9E72AD /* NearNoteStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearNoteStyle.swift; sourceTree = "<group>"; };
+		F010310B8C0CDEAAE00FB3C7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FB2AA5BED0AB58A6B9C1514D /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		FFBBA7B7611B457F320CAC42 /* LinkResolverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkResolverService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1587E98790A603401F6C547E /* NearNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				56DAC95797240D991417C84C /* NearNoteTests.swift */,
+			);
+			path = NearNoteTests;
+			sourceTree = "<group>";
+		};
+		3536D97769C21F124FDBD818 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3EB9A01AA819AD4CF2404C48 /* HomeView.swift */,
+				9F4674C181041E0F992C5C71 /* LocationPickerView.swift */,
+				7E9FDBEF2E8372EA3628CC9D /* MainView.swift */,
+				8CADAD061AF958679345FC46 /* MapView.swift */,
+				6FC5E5B055403FF8C0ED7896 /* OnboardingView.swift */,
+				8B9F04A20F59B12E1162C6EF /* PermissionEducationView.swift */,
+				A49D5BF86DCFF3E7C6A1D775 /* ReminderEditSheet.swift */,
+				F010310B8C0CDEAAE00FB3C7 /* SettingsView.swift */,
+				93CE01B20685F6A9710CE741 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D94FD36550C531C576BEC35 = {
+			isa = PBXGroup;
+			children = (
+				D7B930A1B6F40E18192CA40A /* NearNote */,
+				1587E98790A603401F6C547E /* NearNoteTests */,
+				637602CB36121EE7326948E3 /* NearNoteWidget */,
+				4D2C95C2ACF2671E95DCCE7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D2C95C2ACF2671E95DCCE7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C21B215511DF3542D0910E86 /* NearNote.app */,
+				CA60022614FDE23839B3F312 /* NearNoteTests.xctest */,
+				7F687D259D2017547CA6EE1B /* NearNoteWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		637602CB36121EE7326948E3 /* NearNoteWidget */ = {
+			isa = PBXGroup;
+			children = (
+				216960FA931F2C150CB72F98 /* Info.plist */,
+				4FEFD4247D11813C586F6D24 /* NearNoteHomeScreenWidget.swift */,
+				3284E6D4CEF760EDD10FB40F /* NearNoteWidget.entitlements */,
+				9CCB9C7CD414E5655EEDC9A4 /* NearNoteWidgetBundle.swift */,
+				7C2388E238607FE2B3E4B991 /* ReminderActivityAttributes.swift */,
+				8304DE0C6E8B5924FC245510 /* ToggleReminderIntent.swift */,
+			);
+			path = NearNoteWidget;
+			sourceTree = "<group>";
+		};
+		89CBF59969A7897E26E8C493 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18A9E4A7966FA2205942B281 /* Place.swift */,
+				4ACDCCF0E574ABE7997EC6B5 /* Reminder.swift */,
+				391CB940CBCF8F1E03D9A187 /* SavedPlace.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93CE01B20685F6A9710CE741 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EED93AF1B9FCFB26EE9E72AD /* NearNoteStyle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B4CD1740385EB6CECA0E6274 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E43CA4DE783608FD2CCCAEE /* AppConfiguration.swift */,
+				5883A1F038DB112031042725 /* GeofenceManager.swift */,
+				DD3185386EA5B2595C0D7A3C /* LinkParserService.swift */,
+				FFBBA7B7611B457F320CAC42 /* LinkResolverService.swift */,
+				FB2AA5BED0AB58A6B9C1514D /* LocationService.swift */,
+				C0D9B487551498A6F6B76D4C /* NotificationService.swift */,
+				8302EF535C40A42A33758F50 /* PlaceSearchService.swift */,
+				4F51634AC611D42CF6AAD57A /* ReminderStore.swift */,
+				C894040D64139DC2EFB9D3ED /* SettingsStore.swift */,
+				970C607D8D42D50E57C809C1 /* TelemetryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D7B930A1B6F40E18192CA40A /* NearNote */ = {
+			isa = PBXGroup;
+			children = (
+				150BFAE3C29E53953BD25882 /* Assets.xcassets */,
+				AEFF5A076B391296BD488798 /* Info.plist */,
+				A2695F43811340D1014A608E /* NearNote.entitlements */,
+				8D830F7FD8DFEC2C4C4F9A82 /* NearNoteApp.swift */,
+				D464C3747BD1CAB4D8218B48 /* PrivacyInfo.xcprivacy */,
+				89CBF59969A7897E26E8C493 /* Models */,
+				B4CD1740385EB6CECA0E6274 /* Services */,
+				3536D97769C21F124FDBD818 /* Views */,
+			);
+			path = NearNote;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D5752137A22018D6E67CA13 /* NearNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1350458981C75F8EAF729BC /* Build configuration list for PBXNativeTarget "NearNote" */;
+			buildPhases = (
+				D8E0509556E6B4459C591559 /* Sources */,
+				451ABB6F9B9F8669CA3B61F2 /* Resources */,
+				AB7F0A894CCB8BB8F161EE88 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29CC0A66B63AC915D18B7657 /* PBXTargetDependency */,
+			);
+			name = NearNote;
+			packageProductDependencies = (
+			);
+			productName = NearNote;
+			productReference = C21B215511DF3542D0910E86 /* NearNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75FF57A83B4EC107F53D9D5C /* NearNoteWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D875DC0558BE969919D1B7 /* Build configuration list for PBXNativeTarget "NearNoteWidget" */;
+			buildPhases = (
+				EC5D1340635CEE21B8C2D554 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NearNoteWidget;
+			packageProductDependencies = (
+			);
+			productName = NearNoteWidget;
+			productReference = 7F687D259D2017547CA6EE1B /* NearNoteWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BD01611B2B6053015CF56F8F /* NearNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEAFB7ED7CC4775D9609BFE /* Build configuration list for PBXNativeTarget "NearNoteTests" */;
+			buildPhases = (
+				E920EEB900599EE0BFB34D58 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44C0ABBA39C4AA52C728C892 /* PBXTargetDependency */,
+			);
+			name = NearNoteTests;
+			packageProductDependencies = (
+			);
+			productName = NearNoteTests;
+			productReference = CA60022614FDE23839B3F312 /* NearNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC3FFAE07CB9C320A4E20F24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = D463852F081EFDAD193EF1AA /* Build configuration list for PBXProject "NearNote" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3D94FD36550C531C576BEC35;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4D2C95C2ACF2671E95DCCE7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D5752137A22018D6E67CA13 /* NearNote */,
+				BD01611B2B6053015CF56F8F /* NearNoteTests */,
+				75FF57A83B4EC107F53D9D5C /* NearNoteWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		451ABB6F9B9F8669CA3B61F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADA6BF75E4DF2F509C5D0F6 /* Assets.xcassets in Resources */,
+				B2FD124CF94CC51AEFE1145D /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8E0509556E6B4459C591559 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCCF1BD36AC6BA8B9E90999 /* AppConfiguration.swift in Sources */,
+				BB0AD140D96CA529D43015AB /* GeofenceManager.swift in Sources */,
+				49824A0B42F96FD54F8442CA /* HomeView.swift in Sources */,
+				7D62578E530B4060E8B39166 /* LinkParserService.swift in Sources */,
+				D197803F76038E71C431A896 /* LinkResolverService.swift in Sources */,
+				28DB1759B0C0A1FE02DB1FB4 /* LocationPickerView.swift in Sources */,
+				70B3984CDC6AAA695DA5DE6A /* LocationService.swift in Sources */,
+				C684BB872AADC4164FD902FB /* MainView.swift in Sources */,
+				63EF11D82180D679583F082D /* MapView.swift in Sources */,
+				BCBA9D90D6BEE097E5BBE0C8 /* NearNoteApp.swift in Sources */,
+				1C79727C46A45B6D1963FA3D /* NearNoteStyle.swift in Sources */,
+				BFE1FE6A43D2AC7AA56285E4 /* NotificationService.swift in Sources */,
+				D25748996E43A8E9393593D8 /* OnboardingView.swift in Sources */,
+				7000D3E5638116B45A193646 /* PermissionEducationView.swift in Sources */,
+				FA36309D2EAA99F096E30430 /* Place.swift in Sources */,
+				4F173DB28ED5F02738EDBCF5 /* PlaceSearchService.swift in Sources */,
+				164DEB19C85384133BF1568F /* Reminder.swift in Sources */,
+				A5A76399B7FD0EDAE2F70C7C /* ReminderEditSheet.swift in Sources */,
+				A9870C1D2E715FE21B11ADF0 /* ReminderStore.swift in Sources */,
+				F509EB2DBE720DEDD69FAD65 /* SavedPlace.swift in Sources */,
+				EB4BB5ECE64BF434D3A91FD4 /* SettingsStore.swift in Sources */,
+				B0D83CA5DB6593E9A628C766 /* SettingsView.swift in Sources */,
+				0EA961EE1CE470322A628936 /* TelemetryService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E920EEB900599EE0BFB34D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3F40B281D8C2A8A76F5A4F /* NearNoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5D1340635CEE21B8C2D554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28D684770B0BC5447E7D599 /* NearNoteHomeScreenWidget.swift in Sources */,
+				CD563C0824173AF1DC57C52E /* NearNoteWidgetBundle.swift in Sources */,
+				6B776C3307D489B84136EEE3 /* Place.swift in Sources */,
+				270EAEEEBD3020D1D3286AB3 /* Reminder.swift in Sources */,
+				F1914648E7D5149346620EF1 /* ReminderActivityAttributes.swift in Sources */,
+				BBB3BBE69AD1CEF1DFF6B324 /* ReminderStore.swift in Sources */,
+				2A193DC71FC66F7F688DCFF1 /* SavedPlace.swift in Sources */,
+				722CD991CDF95ECD2E6E3D3B /* ToggleReminderIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29CC0A66B63AC915D18B7657 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75FF57A83B4EC107F53D9D5C /* NearNoteWidget */;
+			targetProxy = 34A9E8CE3F6E6D9893CC6B04 /* PBXContainerItemProxy */;
+		};
+		44C0ABBA39C4AA52C728C892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D5752137A22018D6E67CA13 /* NearNote */;
+			targetProxy = 687AE68BAB8689948FF4D5EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05276C35141B25D2A0FE4FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mosaab.NearNoteTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NearNote.app/NearNote";
+			};
+			name = Release;
+		};
+		176364483EC1B97F5E2F2F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NearNote/NearNote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GOOGLE_PLACES_API_KEY = "";
+				INFOPLIST_FILE = NearNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEARNOTE_FEEDBACK_ENDPOINT = "";
+				NEARNOTE_PRIVACY_URL = "https://joevenner.github.io/moments-hq/privacy";
+				NEARNOTE_SUPPORT_URL = "https://joevenner.github.io/moments-hq/support";
+				NEARNOTE_TELEMETRY_ENDPOINT = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mosaab.NearNote;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		433809049D84E1E3DBAC667F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		70CCE51D4F3CDD46051F81B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NearNote/NearNote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GOOGLE_PLACES_API_KEY = "";
+				INFOPLIST_FILE = NearNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEARNOTE_FEEDBACK_ENDPOINT = "";
+				NEARNOTE_PRIVACY_URL = "https://joevenner.github.io/moments-hq/privacy";
+				NEARNOTE_SUPPORT_URL = "https://joevenner.github.io/moments-hq/support";
+				NEARNOTE_TELEMETRY_ENDPOINT = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mosaab.NearNote;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9706E7A9B0BECDB83417F7C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mosaab.NearNoteTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NearNote.app/NearNote";
+			};
+			name = Debug;
+		};
+		D493F198D526C705B636FD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E163F50FCC5EE51E6EE946F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NearNoteWidget/NearNoteWidget.entitlements;
+				INFOPLIST_FILE = NearNoteWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mosaab.NearNote.NearNoteWidget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFF7359EB18C779B4FC31729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NearNoteWidget/NearNoteWidget.entitlements;
+				INFOPLIST_FILE = NearNoteWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mosaab.NearNote.NearNoteWidget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00D875DC0558BE969919D1B7 /* Build configuration list for PBXNativeTarget "NearNoteWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF7359EB18C779B4FC31729 /* Debug */,
+				E163F50FCC5EE51E6EE946F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BCEAFB7ED7CC4775D9609BFE /* Build configuration list for PBXNativeTarget "NearNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9706E7A9B0BECDB83417F7C8 /* Debug */,
+				05276C35141B25D2A0FE4FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D463852F081EFDAD193EF1AA /* Build configuration list for PBXProject "NearNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D493F198D526C705B636FD19 /* Debug */,
+				433809049D84E1E3DBAC667F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1350458981C75F8EAF729BC /* Build configuration list for PBXNativeTarget "NearNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176364483EC1B97F5E2F2F44 /* Debug */,
+				70CCE51D4F3CDD46051F81B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC3FFAE07CB9C320A4E20F24 /* Project object */;
+}
