@@ -20,8 +20,8 @@ No account, backend, analytics SDK, or API key is required. Apple MapKit is the 
 
 ## Public App Store resources
 
-- Privacy policy: https://joevenner.github.io/moments-hq/privacy/
-- Support: https://joevenner.github.io/moments-hq/support/
+- Privacy policy: https://joevenner.github.io/nearnotes/privacy/
+- Support: https://joevenner.github.io/nearnotes/support/
 
 The static source is in `site/` and `.github/workflows/pages.yml` deploys it to GitHub Pages whenever those files change on `main`.
 

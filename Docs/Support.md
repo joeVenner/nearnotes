@@ -4,7 +4,7 @@ For help, bug reports, or feature requests, contact:
 
 **ylafrimi@gmail.com**
 
-Public support page: **https://joevenner.github.io/moments-hq/support/**
+Public support page: **https://joevenner.github.io/nearnotes/support/**
 
 When reporting a location reminder issue, include:
 

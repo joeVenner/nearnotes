@@ -429,8 +429,8 @@
 				);
 				MARKETING_VERSION = 1.0;
 				NEARNOTE_FEEDBACK_ENDPOINT = "";
-				NEARNOTE_PRIVACY_URL = "https://joevenner.github.io/moments-hq/privacy";
-				NEARNOTE_SUPPORT_URL = "https://joevenner.github.io/moments-hq/support";
+				NEARNOTE_PRIVACY_URL = "https://joevenner.github.io/nearnotes/privacy";
+				NEARNOTE_SUPPORT_URL = "https://joevenner.github.io/nearnotes/support";
 				NEARNOTE_TELEMETRY_ENDPOINT = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosaab.NearNote;
 				SDKROOT = iphoneos;
@@ -509,8 +509,8 @@
 				);
 				MARKETING_VERSION = 1.0;
 				NEARNOTE_FEEDBACK_ENDPOINT = "";
-				NEARNOTE_PRIVACY_URL = "https://joevenner.github.io/moments-hq/privacy";
-				NEARNOTE_SUPPORT_URL = "https://joevenner.github.io/moments-hq/support";
+				NEARNOTE_PRIVACY_URL = "https://joevenner.github.io/nearnotes/privacy";
+				NEARNOTE_SUPPORT_URL = "https://joevenner.github.io/nearnotes/support";
 				NEARNOTE_TELEMETRY_ENDPOINT = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosaab.NearNote;
 				SDKROOT = iphoneos;

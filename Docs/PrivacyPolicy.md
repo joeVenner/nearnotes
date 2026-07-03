@@ -1,6 +1,6 @@
 # NearNote Privacy Policy
 
-Published at: **https://joevenner.github.io/moments-hq/privacy/**
+Published at: **https://joevenner.github.io/nearnotes/privacy/**
 
 Effective date: **02/07/2026**
 

@@ -19,8 +19,8 @@ targets:
       GOOGLE_PLACES_API_KEY: ""
       NEARNOTE_TELEMETRY_ENDPOINT: ""
       NEARNOTE_FEEDBACK_ENDPOINT: ""
-      NEARNOTE_PRIVACY_URL: "https://joevenner.github.io/moments-hq/privacy"
-      NEARNOTE_SUPPORT_URL: "https://joevenner.github.io/moments-hq/support"
+      NEARNOTE_PRIVACY_URL: "https://joevenner.github.io/nearnotes/privacy"
+      NEARNOTE_SUPPORT_URL: "https://joevenner.github.io/nearnotes/support"
     dependencies:
       - target: NearNoteWidget
   NearNoteWidget:
