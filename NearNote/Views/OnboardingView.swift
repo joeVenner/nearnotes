@@ -19,9 +19,9 @@ struct OnboardingView: View {
         ),
         OnboardingPage(
             image: "onboarding_time",
-            title: "Private.\nBattery-safe.\nOn-device.",
+            title: "Private.\nBattery-safe.\niCloud synced.",
             emphasizedPhrase: "",
-            detail: "Apple’s efficient geofences. No tracking."
+            detail: "Local-first storage, private iCloud sync, and no location history."
         )
     ]
 

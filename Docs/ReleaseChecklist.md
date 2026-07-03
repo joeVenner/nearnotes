@@ -59,5 +59,4 @@ For every subsequent upload, increment Build to `2`, `3`, and so on.
 
 ## Suggested App Review note
 
-NearNote creates on-device reminders triggered using Apple region monitoring. It does not use continuous background GPS. No account is required. To test, create a reminder, choose a nearby location, allow notifications and Always Location, and enter the selected region. Map links from Apple Maps, Google Maps, and Waze can be pasted during place selection. Anonymous usage reporting is disabled in this build unless explicitly configured and enabled by the user.
-
+NearNote creates local-first reminders, privately synchronizes them through the user’s iCloud account using CloudKit, and triggers them using Apple region monitoring. It does not use continuous background GPS or require a separate NearNote account. To test, create a reminder, choose a nearby location, allow notifications and Always Location, and enter the selected region. Map links from Apple Maps, Google Maps, and Waze can be pasted during place selection. Anonymous usage reporting is disabled in this build unless explicitly configured and enabled by the user.

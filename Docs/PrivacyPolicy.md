@@ -4,11 +4,13 @@ Published at: **https://joevenner.github.io/nearnotes/privacy/**
 
 Effective date: **02/07/2026**
 
-NearNote is built to keep reminders and places private. This policy explains what the app processes and what may leave the device.
+NearNote is built to keep reminders and places private. This policy explains local processing, private iCloud synchronization, and other information that may leave the device.
 
-## Information stored on your device
+## Storage and private iCloud synchronization
 
-NearNote stores reminder text, saved places, geographic coordinates, preferences, completion state, and recent places locally on your device using Apple system storage. NearNote does not require an account.
+NearNote stores reminder text, saved places, geographic coordinates, preferences, completion state, and recent places locally using Apple system storage. When iCloud is available, Apple CloudKit synchronizes this information through a private database associated with your Apple Account so it can remain available across your devices.
+
+NearNote does not require a separate NearNote account and does not operate its own reminder-sync server. Apple processes iCloud data under its own terms and privacy policy. You can control iCloud access and storage from your Apple Account and device settings.
 
 ## Location
 
@@ -38,7 +40,7 @@ When you choose to report a problem, you control the report text and whether to 
 
 ## Retention and deletion
 
-On-device information remains until you delete it, remove the app, or erase the device. You can delete reminders and saved places inside NearNote.
+Information may remain in local storage and your private iCloud database until it is deleted. Deleting reminders and saved places inside NearNote updates the synchronized data. Removing the app alone may not delete information already stored in iCloud; you can manage app data through your iCloud settings.
 
 If direct diagnostics or feedback collection is enabled, describe the production retention period and deletion-request process here: **1 Month**.
 

@@ -16,7 +16,7 @@ xcodegen generate
 open NearNote.xcodeproj
 ```
 
-No account, backend, analytics SDK, or API key is required. Apple MapKit is the default place provider.
+No NearNote account, developer-operated backend, analytics SDK, or API key is required. Reminders use local-first storage with private CloudKit sync through the user’s iCloud account. Apple MapKit is the default place provider.
 
 ## Public App Store resources
 
@@ -59,7 +59,7 @@ The app does not run continuous background GPS. Active high-accuracy location up
 
 The app uses SwiftUI, SwiftData, and small service boundaries:
 
-- `ReminderStore`: on-device SwiftData persistence.
+- `ReminderStore`: local-first SwiftData persistence with private iCloud/CloudKit synchronization.
 - `LocationService`: foreground/current-location access and permission state.
 - `GeofenceManager`: prioritizes the nearest reminders within iOS’s 20-region budget and handles original/similar-place regions.
 - `PlaceSearchService`: provider facade with Google-first/Apple-fallback behavior.
@@ -110,7 +110,7 @@ Unit coverage includes persistence, category detection, full map-link parsing, a
 
 ## Implemented, mocked, and remaining
 
-Implemented: local persistence, polished location-first UI, provider abstraction/fallback, Google Places API (New) text and nearby REST clients, MapKit rendering, offline full-link parsing, recent/Home/Work places, category confidence, smart alternatives, geofences, local notification actions, quiet hours, cooldown, radius presets, privacy education, and generated cinematic brand assets.
+Implemented: local-first persistence with private CloudKit sync, polished location-first UI, provider abstraction/fallback, Google Places API (New) text and nearby REST clients, MapKit rendering, offline full-link parsing, recent/Home/Work places, category confidence, smart alternatives, geofences, local notification actions, quiet hours, cooldown, radius presets, privacy education, and generated cinematic brand assets.
 
 Mock/fallback behavior: Apple MapKit is the zero-configuration provider. A missing or failing Google key falls back automatically. Shortened Google Maps URLs use a time-limited redirect request; if Google or the network does not return usable coordinates, the UI offers a clean retry/manual-search fallback. Telemetry and direct feedback remain disabled until their endpoints are configured.
 

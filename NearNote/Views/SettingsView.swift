@@ -102,7 +102,7 @@ struct SettingsView: View {
                         SettingsRow(
                             symbol: "lock.shield.fill",
                             title: "Privacy",
-                            value: "On Device"
+                            value: "Private iCloud"
                         )
                     }
                     if let privacyURL = AppConfiguration.privacyPolicyURL {
@@ -113,7 +113,7 @@ struct SettingsView: View {
                 } header: {
                     Text("Privacy & Diagnostics")
                 } footer: {
-                    Text("Optional usage data never includes reminder text, saved places, or coordinates. No data is sent unless an endpoint is configured.")
+                    Text("Optional usage data never includes reminder text, saved places, or coordinates. No diagnostic data is sent unless an endpoint is configured.")
                 }
 
                 Section("Support") {
@@ -239,7 +239,7 @@ private struct SettingsRow: View {
 private struct PrivacyView: View {
     private let promises = [
         ("location.slash.fill", "No location history", "NearNote never builds a timeline of where you’ve been."),
-        ("iphone", "Stored on this device", "Your reminders and saved places stay in local storage."),
+        ("icloud.fill", "Private iCloud sync", "Reminders and saved places are stored locally and synced through your private iCloud database when available."),
         ("battery.100percent", "Battery-efficient by design", "Apple region monitoring wakes NearNote only when needed."),
         ("hand.raised.fill", "Optional anonymous diagnostics", "Usage sharing is off by default and never includes your reminder text or coordinates.")
     ]
@@ -255,7 +255,7 @@ private struct PrivacyView: View {
                     .font(.largeTitle.bold())
                     .multilineTextAlignment(.center)
                     .padding(.top, 20)
-                Text("NearNote works without an account or server. Location is used only to deliver the reminders you create.")
+                Text("NearNote needs no separate account and operates no reminder server. Apple CloudKit privately syncs your data across your devices.")
                     .font(.body)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
