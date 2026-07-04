@@ -30,7 +30,8 @@ Google Maps link pasting still works without a Google Places API key.
 7. Run Product > Analyze.
 8. Test on a physical iPhone with Location set to Always and Notifications enabled.
 9. Test foreground, background, and terminated arrival delivery.
-10. Test Google short links, offline behavior, archive/resume, saved places, quiet hours, and report sharing.
+10. Test Lock Screen and Dynamic Island Live Activity start, foreground distance updates, and stop behavior.
+11. Test Google short links, offline behavior, archive/resume, saved places, quiet hours, and report sharing.
 
 ## Archive
 

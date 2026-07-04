@@ -2,26 +2,6 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-public struct ReminderActivityAttributes: ActivityAttributes {
-    public struct ContentState: Codable, Hashable {
-        public var distanceString: String
-        public var isClose: Bool
-        
-        public init(distanceString: String, isClose: Bool) {
-            self.distanceString = distanceString
-            self.isClose = isClose
-        }
-    }
-    
-    public var reminderTitle: String
-    public var placeName: String
-    
-    public init(reminderTitle: String, placeName: String) {
-        self.reminderTitle = reminderTitle
-        self.placeName = placeName
-    }
-}
-
 struct ReminderActivityWidget: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: ReminderActivityAttributes.self) { context in

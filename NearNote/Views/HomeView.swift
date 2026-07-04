@@ -7,10 +7,12 @@ struct HomeView: View {
     let onAdd: () -> Void
     @Environment(\.modelContext) private var modelContext
     @EnvironmentObject private var locationService: LocationService
+    @StateObject private var liveActivityService = LiveActivityService.shared
     @Query private var reminders: [Reminder]
     @State private var editingReminder: Reminder?
     @State private var showPermissions = false
     @State private var showCompletion = false
+    @State private var liveActivityError: String?
 
     private struct NearbyItem: Identifiable {
         let reminder: Reminder
@@ -49,6 +51,8 @@ struct HomeView: View {
                                     onComplete: { complete(item.reminder) },
                                     onArchive: { archive(item.reminder) },
                                     onNavigate: { navigate(to: item.reminder) },
+                                    isTrackingOnLockScreen: liveActivityService.activeReminderID == item.reminder.id,
+                                    onToggleLockScreen: { toggleLockScreenRadar(for: item) },
                                     onEdit: { editingReminder = item.reminder }
                                 )
                             }
@@ -97,6 +101,14 @@ struct HomeView: View {
             .sheet(item: $editingReminder) { ReminderComposerView(reminder: $0) }
             .sheet(isPresented: $showPermissions) { PermissionEducationView() }
             .overlay { completionOverlay }
+            .alert("Lock Screen Radar", isPresented: Binding(
+                get: { liveActivityError != nil },
+                set: { if !$0 { liveActivityError = nil } }
+            )) {
+                Button("OK", role: .cancel) { liveActivityError = nil }
+            } message: {
+                Text(liveActivityError ?? "")
+            }
             .task {
                 locationService.requestCurrentLocation()
                 await locationService.updateMonitoredRegions()
@@ -171,6 +183,7 @@ struct HomeView: View {
             try? modelContext.save()
         }
         TelemetryService.shared.track(.reminderCompleted)
+        Task { await liveActivityService.end(reminderID: reminder.id) }
         withAnimation(.spring(response: 0.35, dampingFraction: 0.78)) { showCompletion = true }
         Task {
             try? await Task.sleep(for: .seconds(1.1))
@@ -185,13 +198,26 @@ struct HomeView: View {
             try? modelContext.save()
         }
         TelemetryService.shared.track(.reminderArchived)
-        Task { await locationService.updateMonitoredRegions() }
+        Task {
+            await liveActivityService.end(reminderID: reminder.id)
+            await locationService.updateMonitoredRegions()
+        }
     }
 
     private func navigate(to reminder: Reminder) {
         let item = MKMapItem(placemark: MKPlacemark(coordinate: reminder.coordinate))
         item.name = reminder.placeName
         item.openInMaps()
+    }
+
+    private func toggleLockScreenRadar(for item: NearbyItem) {
+        Task {
+            do {
+                try await liveActivityService.toggle(reminder: item.reminder, distance: item.distance)
+            } catch {
+                liveActivityError = error.localizedDescription
+            }
+        }
     }
 }
 
@@ -201,6 +227,8 @@ struct NearbyReminderCard: View {
     let onComplete: () -> Void
     let onArchive: () -> Void
     let onNavigate: () -> Void
+    let isTrackingOnLockScreen: Bool
+    let onToggleLockScreen: () -> Void
     let onEdit: () -> Void
 
     var body: some View {
@@ -223,6 +251,11 @@ struct NearbyReminderCard: View {
                 Spacer(minLength: 8)
                 Menu {
                     Button("Complete", systemImage: "checkmark.circle", action: onComplete)
+                    Button(
+                        isTrackingOnLockScreen ? "Stop Lock Screen Radar" : "Show on Lock Screen",
+                        systemImage: isTrackingOnLockScreen ? "livephoto.slash" : "livephoto",
+                        action: onToggleLockScreen
+                    )
                     Button("Navigate", systemImage: "location.fill", action: onNavigate)
                     Button("Edit", systemImage: "pencil", action: onEdit)
                     Button("Archive", systemImage: "archivebox", action: onArchive)

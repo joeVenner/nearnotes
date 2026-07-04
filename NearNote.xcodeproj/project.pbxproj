@@ -15,8 +15,11 @@
 		28DB1759B0C0A1FE02DB1FB4 /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4674C181041E0F992C5C71 /* LocationPickerView.swift */; };
 		2A193DC71FC66F7F688DCFF1 /* SavedPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391CB940CBCF8F1E03D9A187 /* SavedPlace.swift */; };
 		2ADA6BF75E4DF2F509C5D0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150BFAE3C29E53953BD25882 /* Assets.xcassets */; };
+		4098D2B4FFDA268C40D47A69 /* ReminderLiveActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF03D65D3DDD434177B28 /* ReminderLiveActivityData.swift */; };
+		47AED56EBE8049C2884B23B1 /* ReminderLiveActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF03D65D3DDD434177B28 /* ReminderLiveActivityData.swift */; };
 		49824A0B42F96FD54F8442CA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB9A01AA819AD4CF2404C48 /* HomeView.swift */; };
 		4F173DB28ED5F02738EDBCF5 /* PlaceSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302EF535C40A42A33758F50 /* PlaceSearchService.swift */; };
+		5979FB024893DCDEACA89706 /* LiveActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C91E840B3F1A4A1FF87845 /* LiveActivityService.swift */; };
 		63EF11D82180D679583F082D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CADAD061AF958679345FC46 /* MapView.swift */; };
 		6B776C3307D489B84136EEE3 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9E4A7966FA2205942B281 /* Place.swift */; };
 		7000D3E5638116B45A193646 /* PermissionEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F04A20F59B12E1162C6EF /* PermissionEducationView.swift */; };
@@ -98,6 +101,7 @@
 		8CADAD061AF958679345FC46 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8D830F7FD8DFEC2C4C4F9A82 /* NearNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearNoteApp.swift; sourceTree = "<group>"; };
 		970C607D8D42D50E57C809C1 /* TelemetryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryService.swift; sourceTree = "<group>"; };
+		9A2FF03D65D3DDD434177B28 /* ReminderLiveActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderLiveActivityData.swift; sourceTree = "<group>"; };
 		9CCB9C7CD414E5655EEDC9A4 /* NearNoteWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearNoteWidgetBundle.swift; sourceTree = "<group>"; };
 		9F4674C181041E0F992C5C71 /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
 		A2695F43811340D1014A608E /* NearNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NearNote.entitlements; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		DD3185386EA5B2595C0D7A3C /* LinkParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkParserService.swift; sourceTree = "<group>"; };
 		EED93AF1B9FCFB26EE9E72AD /* NearNoteStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearNoteStyle.swift; sourceTree = "<group>"; };
 		F010310B8C0CDEAAE00FB3C7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F3C91E840B3F1A4A1FF87845 /* LiveActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityService.swift; sourceTree = "<group>"; };
 		FB2AA5BED0AB58A6B9C1514D /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		FFBBA7B7611B457F320CAC42 /* LinkResolverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkResolverService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +183,7 @@
 			children = (
 				18A9E4A7966FA2205942B281 /* Place.swift */,
 				4ACDCCF0E574ABE7997EC6B5 /* Reminder.swift */,
+				9A2FF03D65D3DDD434177B28 /* ReminderLiveActivityData.swift */,
 				391CB940CBCF8F1E03D9A187 /* SavedPlace.swift */,
 			);
 			path = Models;
@@ -198,6 +204,7 @@
 				5883A1F038DB112031042725 /* GeofenceManager.swift */,
 				DD3185386EA5B2595C0D7A3C /* LinkParserService.swift */,
 				FFBBA7B7611B457F320CAC42 /* LinkResolverService.swift */,
+				F3C91E840B3F1A4A1FF87845 /* LiveActivityService.swift */,
 				FB2AA5BED0AB58A6B9C1514D /* LocationService.swift */,
 				C0D9B487551498A6F6B76D4C /* NotificationService.swift */,
 				8302EF535C40A42A33758F50 /* PlaceSearchService.swift */,
@@ -335,6 +342,7 @@
 				49824A0B42F96FD54F8442CA /* HomeView.swift in Sources */,
 				7D62578E530B4060E8B39166 /* LinkParserService.swift in Sources */,
 				D197803F76038E71C431A896 /* LinkResolverService.swift in Sources */,
+				5979FB024893DCDEACA89706 /* LiveActivityService.swift in Sources */,
 				28DB1759B0C0A1FE02DB1FB4 /* LocationPickerView.swift in Sources */,
 				70B3984CDC6AAA695DA5DE6A /* LocationService.swift in Sources */,
 				C684BB872AADC4164FD902FB /* MainView.swift in Sources */,
@@ -348,6 +356,7 @@
 				4F173DB28ED5F02738EDBCF5 /* PlaceSearchService.swift in Sources */,
 				164DEB19C85384133BF1568F /* Reminder.swift in Sources */,
 				A5A76399B7FD0EDAE2F70C7C /* ReminderEditSheet.swift in Sources */,
+				47AED56EBE8049C2884B23B1 /* ReminderLiveActivityData.swift in Sources */,
 				A9870C1D2E715FE21B11ADF0 /* ReminderStore.swift in Sources */,
 				F509EB2DBE720DEDD69FAD65 /* SavedPlace.swift in Sources */,
 				EB4BB5ECE64BF434D3A91FD4 /* SettingsStore.swift in Sources */,
@@ -373,6 +382,7 @@
 				6B776C3307D489B84136EEE3 /* Place.swift in Sources */,
 				270EAEEEBD3020D1D3286AB3 /* Reminder.swift in Sources */,
 				F1914648E7D5149346620EF1 /* ReminderActivityAttributes.swift in Sources */,
+				4098D2B4FFDA268C40D47A69 /* ReminderLiveActivityData.swift in Sources */,
 				BBB3BBE69AD1CEF1DFF6B324 /* ReminderStore.swift in Sources */,
 				2A193DC71FC66F7F688DCFF1 /* SavedPlace.swift in Sources */,
 				722CD991CDF95ECD2E6E3D3B /* ToggleReminderIntent.swift in Sources */,

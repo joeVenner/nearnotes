@@ -64,6 +64,7 @@ public final class LocationService: NSObject, ObservableObject, CLLocationManage
         Task { @MainActor in
             let service = LocationService.shared
             service.currentLocation = location
+            await LiveActivityService.shared.update(for: location)
             if service.lastGeofenceRefresh == nil || Date().timeIntervalSince(service.lastGeofenceRefresh!) > 300 {
                 service.lastGeofenceRefresh = Date()
                 await service.updateMonitoredRegions()

@@ -79,6 +79,7 @@ The app uses SwiftUI, SwiftData, and small service boundaries:
 - Exact-place and similar-category trigger modes.
 - Automatic, 100 m, 250 m, 500 m, 1000 m, and custom radius choices.
 - Local actionable notifications with a configurable repeat cooldown and quiet hours.
+- User-controlled Lock Screen and Dynamic Island radar for one active reminder, refreshed only from foreground location updates.
 - Done, resume, archive, and restore reminder lifecycle actions.
 - Unlimited labeled saved places, with the first two shown until expanded.
 - Saved places can be added by normal search or by pasting full and shortened Google Maps, Apple Maps, and Waze links.
@@ -106,7 +107,8 @@ Unit coverage includes persistence, category detection, full map-link parsing, a
 3. arrival delivery with the app backgrounded and terminated;
 4. cooldown and quiet-hour behavior;
 5. Done, Later, Navigate, Complete Here, and Wait for Original Place actions;
-6. the 20-region prioritization with more than 20 active reminders.
+6. starting, updating, and stopping the Lock Screen radar from a Nearby reminder;
+7. the 20-region prioritization with more than 20 active reminders.
 
 ## Implemented, mocked, and remaining
 
