@@ -12,6 +12,8 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleDisplayName</key>
+	<string>NearNotes</string>
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
@@ -35,11 +37,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>NearNote uses your location to show nearby reminders, search for places, and set up reminders on the map.</string>
+	<string>NearNotes uses your location to show nearby reminders, search for places, and set up reminders on the map.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>NearNote requires background location access to trigger your alerts when you arrive or leave a selected place, even when the app is closed or in the background. NearNote never tracks your continuous location.</string>
+	<string>NearNotes requires background location access to trigger your alerts when you arrive or leave a selected place, even when the app is closed or in the background. NearNotes never tracks your continuous location.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>NearNote requires background location access to trigger your alerts when you arrive or leave a selected place, even when the app is closed or in the background.</string>
+	<string>NearNotes requires background location access to trigger your alerts when you arrive or leave a selected place, even when the app is closed or in the background.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

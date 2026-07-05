@@ -102,7 +102,7 @@ public final class LinkResolverService: ObservableObject {
         request.timeoutInterval = 12
         request.cachePolicy = .reloadIgnoringLocalCacheData
         request.setValue("text/html,application/xhtml+xml", forHTTPHeaderField: "Accept")
-        request.setValue("NearNote/1.0 iOS", forHTTPHeaderField: "User-Agent")
+        request.setValue("NearNotes/1.0 iOS", forHTTPHeaderField: "User-Agent")
         
         do {
             let (data, response) = try await session.data(for: request)

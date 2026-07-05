@@ -297,6 +297,15 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					1D5752137A22018D6E67CA13 = {
+						DevelopmentTeam = 7877JLKPRQ;
+					};
+					75FF57A83B4EC107F53D9D5C = {
+						DevelopmentTeam = 7877JLKPRQ;
+					};
+					BD01611B2B6053015CF56F8F = {
+						DevelopmentTeam = 7877JLKPRQ;
+					};
 				};
 			};
 			buildConfigurationList = D463852F081EFDAD193EF1AA /* Build configuration list for PBXProject "NearNote" */;
@@ -409,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7877JLKPRQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,6 +440,7 @@
 				CODE_SIGN_ENTITLEMENTS = NearNote/NearNote.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7877JLKPRQ;
 				GOOGLE_PLACES_API_KEY = "";
 				INFOPLIST_FILE = NearNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -510,6 +521,7 @@
 				CODE_SIGN_ENTITLEMENTS = NearNote/NearNote.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7877JLKPRQ;
 				GOOGLE_PLACES_API_KEY = "";
 				INFOPLIST_FILE = NearNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -532,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7877JLKPRQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NearNoteWidget/NearNoteWidget.entitlements;
+				DEVELOPMENT_TEAM = 7877JLKPRQ;
 				INFOPLIST_FILE = NearNoteWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -629,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NearNoteWidget/NearNoteWidget.entitlements;
+				DEVELOPMENT_TEAM = 7877JLKPRQ;
 				INFOPLIST_FILE = NearNoteWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (

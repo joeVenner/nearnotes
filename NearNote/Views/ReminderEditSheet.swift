@@ -192,7 +192,7 @@ struct ReminderComposerView: View {
             Text("Notify me")
         } footer: {
             if triggerMode == .similarCategory, let category = place.category {
-                Text("NearNote can also remind you at another nearby \(category.title.lowercased()).")
+                Text("NearNotes can also remind you at another nearby \(category.title.lowercased()).")
             } else {
                 Text("This reminder will only appear near \(place.name).")
             }
@@ -220,7 +220,7 @@ struct ReminderComposerView: View {
         } footer: {
             Text(radiusMode == .automatic
                  ? "Automatic uses a reliable distance for this location while keeping battery use low."
-                 : "NearNote uses Apple’s battery-efficient region monitoring, not continuous tracking.")
+                 : "NearNotes uses Apple’s battery-efficient region monitoring, not continuous tracking.")
         }
     }
 
@@ -515,7 +515,7 @@ private struct LinkPlacePickerView: View {
                     .keyboardType(.URL)
                     .lineLimit(3...6)
             } footer: {
-                Text("NearNote reads full Apple Maps, Google Maps, and Waze links on your device.")
+                Text("NearNotes reads full Apple Maps, Google Maps, and Waze links on your device.")
             }
 
             Section {

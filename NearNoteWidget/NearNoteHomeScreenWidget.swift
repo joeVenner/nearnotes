@@ -58,7 +58,7 @@ struct NearNoteHomeScreenWidgetEntryView: View {
             HStack {
                 Image(systemName: "location.north.circle.fill")
                     .foregroundStyle(.green)
-                Text("NearNote")
+                Text("NearNotes")
                     .font(.headline)
                 Spacer()
                 Text("\(entry.reminders.count)")

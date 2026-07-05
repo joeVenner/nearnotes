@@ -20,7 +20,7 @@ struct PermissionEducationView: View {
                         Text("Alerts that respect your battery")
                             .font(.title.bold())
                             .multilineTextAlignment(.center)
-                        Text("NearNote asks only for access needed to show your reminders at the right place.")
+                        Text("NearNotes asks only for access needed to show your reminders at the right place.")
                             .font(.body)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)
@@ -54,7 +54,7 @@ struct PermissionEducationView: View {
                     PermissionRow(
                         symbol: "location.badge.checkmark",
                         title: "Background Alerts",
-                        detail: "Lets iOS detect arrivals when NearNote is closed—without continuous tracking.",
+                        detail: "Lets iOS detect arrivals when NearNotes is closed—without continuous tracking.",
                         isReady: locationService.authorizationStatus == .authorizedAlways,
                         actionTitle: "Enable Background Alerts"
                     ) {

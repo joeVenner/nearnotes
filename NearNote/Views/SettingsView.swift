@@ -238,9 +238,9 @@ private struct SettingsRow: View {
 
 private struct PrivacyView: View {
     private let promises = [
-        ("location.slash.fill", "No location history", "NearNote never builds a timeline of where you’ve been."),
+        ("location.slash.fill", "No location history", "NearNotes never builds a timeline of where you’ve been."),
         ("icloud.fill", "Private iCloud sync", "Reminders and saved places are stored locally and synced through your private iCloud database when available."),
-        ("battery.100percent", "Battery-efficient by design", "Apple region monitoring wakes NearNote only when needed."),
+        ("battery.100percent", "Battery-efficient by design", "Apple region monitoring wakes NearNotes only when needed."),
         ("hand.raised.fill", "Optional anonymous diagnostics", "Usage sharing is off by default and never includes your reminder text or coordinates.")
     ]
 
@@ -255,7 +255,7 @@ private struct PrivacyView: View {
                     .font(.largeTitle.bold())
                     .multilineTextAlignment(.center)
                     .padding(.top, 20)
-                Text("NearNote needs no separate account and operates no reminder server. Apple CloudKit privately syncs your data across your devices.")
+                Text("NearNotes needs no separate account and operates no reminder server. Apple CloudKit privately syncs your data across your devices.")
                     .font(.body)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)

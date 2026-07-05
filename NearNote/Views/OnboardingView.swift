@@ -9,7 +9,7 @@ struct OnboardingView: View {
             image: "onboarding_welcome",
             title: "Remember things\nwhere they matter.",
             emphasizedPhrase: "where they matter.",
-            detail: "NearNote reminds you when you’re actually near the place."
+            detail: "NearNotes reminds you when you’re actually near the place."
         ),
         OnboardingPage(
             image: "onboarding_location",

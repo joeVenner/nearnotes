@@ -87,10 +87,9 @@ enum LiveActivityError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .disabled:
-            "Live Activities are disabled. Enable them in Settings → Apps → NearNote → Live Activities."
+            "Live Activities are disabled. Enable them in Settings → Apps → NearNotes → Live Activities."
         case .couldNotStart(let message):
             "The Lock Screen radar could not start. \(message)"
         }
     }
 }
-

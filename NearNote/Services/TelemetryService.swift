@@ -119,7 +119,7 @@ public struct FeedbackService {
     }
 
     public func shareText(message: String, contactEmail: String?, includeDiagnostics: Bool) -> String {
-        var lines = ["NearNote problem report", "", message]
+        var lines = ["NearNotes problem report", "", message]
         if let contactEmail, !contactEmail.isEmpty { lines.append("\nContact: \(contactEmail)") }
         if includeDiagnostics {
             lines.append("\nApp: \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "unknown") (\(Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "unknown"))")
