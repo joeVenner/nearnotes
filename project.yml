@@ -14,6 +14,7 @@ targets:
       CODE_SIGN_ENTITLEMENTS: NearNote/NearNote.entitlements
       PRODUCT_BUNDLE_IDENTIFIER: com.mosaab.NearNote
       DEVELOPMENT_TEAM: 7877JLKPRQ
+      INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
       MARKETING_VERSION: "1.0"
       CURRENT_PROJECT_VERSION: "1"
       ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

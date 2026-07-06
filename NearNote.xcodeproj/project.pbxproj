@@ -443,6 +443,7 @@
 				DEVELOPMENT_TEAM = 7877JLKPRQ;
 				GOOGLE_PLACES_API_KEY = "";
 				INFOPLIST_FILE = NearNote/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,6 +525,7 @@
 				DEVELOPMENT_TEAM = 7877JLKPRQ;
 				GOOGLE_PLACES_API_KEY = "";
 				INFOPLIST_FILE = NearNote/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
