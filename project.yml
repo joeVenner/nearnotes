@@ -37,9 +37,12 @@ targets:
       PRODUCT_BUNDLE_IDENTIFIER: com.mosaab.NearNote.NearNoteWidget
       DEVELOPMENT_TEAM: 7877JLKPRQ
       CODE_SIGN_ENTITLEMENTS: NearNoteWidget/NearNoteWidget.entitlements
+      MARKETING_VERSION: "1.0"
+      CURRENT_PROJECT_VERSION: "1"
     info:
       path: NearNoteWidget/Info.plist
       properties:
+        CFBundleDisplayName: NearNotes Widgets
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
   NearNoteTests:
